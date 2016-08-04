@@ -11,3 +11,4 @@ pip3 install peewee
 #other stuff
 apt-get install vlc
 apt-get install google-chrome-stable
+apt-get install uget
