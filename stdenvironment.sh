@@ -9,7 +9,7 @@ apt-get install git -y
 # Sublime Text
 add-apt-repository ppa:webupd8team/sublime-text-3 -y
 apt-get update -y
-apt-get install sublime-text-installer-y
+apt-get install sublime-text-installer -y
 # Python 3
 apt-get install python3 -y
 apt-get install python3-dev -y
