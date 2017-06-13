@@ -1,14 +1,26 @@
 #!/bin/bash
 clear
-#programming stuff
-add-apt-repository ppa:webupd8team/sublime-text-3
-apt-get update
-apt-get install sublime-text-installer
+apt-get update -y
+apt-get upgrade -y
+
+# PROGRAMMING STUFF
+# Git
+apt-get install git -y
+# Sublime Text
+add-apt-repository ppa:webupd8team/sublime-text-3 -y
+apt-get update -y
+apt-get install sublime-text-installer-y
+# Python 3
 apt-get install python3 -y
+apt-get install python3-dev -y
 apt-get install pip3 -y
 pip3 install flask
 pip3 install peewee
-#other stuff
-apt-get install vlc
-apt-get install google-chrome-stable
-apt-get install uget
+# Docker
+apt-get install docker.io -y
+apt-get install docker-compose -y
+# Vim
+sudo apt-get install vim-gnome -y
+# Other Stuff
+apt-get install vlc -y
+apt-get install uget -y
