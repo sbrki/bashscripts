@@ -21,7 +21,17 @@ pip3 install peewee
 apt-get install docker.io -y
 apt-get install docker-compose -y
 # Vim
-sudo apt-get install vim-gnome -y
+apt-get install vim-gnome -y
+	# My vimrc installs vim-plug
+curl -fLo ~/.vimrc --create-dirs 'http://vimrc.stjepanbrkic.com'
+	# Run vim once so that it installs both vim-plug
+	# and the plugins (again, my vimrc handles this)
+vim +qall
+	# Return the ownership of vim and vimrc to the original user
+chown -R $SUDO_USER ~/.vim
+chown $SUDO_USER ~/.vimrc
+
+
 # Other Stuff
 apt-get install vlc -y
 apt-get install uget -y
