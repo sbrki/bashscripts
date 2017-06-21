@@ -23,7 +23,7 @@ apt-get install docker-compose -y
 # Vim
 apt-get install vim-gnome -y
 	# My vimrc installs vim-plug
-curl -fLo ~/.vimrc --create-dirs 'http://vimrc.stjepanbrkic.com'
+curl -fLo ~/.vimrc --create-dirs 'https://vimrc.stjepanbrkic.com'
 	# Run vim once so that it installs both vim-plug
 	# and the plugins (again, my vimrc handles this)
 vim +qall
